@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+    padding: 20px;
+}
+
+.head{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 20px 10px 0px;
+}
+
+.head h1{
+    font-size: 1.5rem;
+}
+
+.line{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0; right: 0;
+    text-align: center;
+    width: 60%;
+    height: 2px;
+    background-color: #222;
+    transition: 0.5s;
+}
+
+.head:hover .line{
+    width: 100%;
+}
+
+.testimonials{
+    max-width: 600px;
+    margin: 0px auto 20px;
+}
+
+.testimonials .testimonial{
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.testimonials .testimonial img{
+    position: relative;
+    bottom: -50px;
+    width: 25%;
+}
+
+.testimonials .testimonial .review{
+    padding: 50px 15px 30px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.testimonials .testimonial .review .text{
+    font-size: 0.65rem;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(112, 112, 112);
+    line-height: 1.1rem;
+}
+
+.testimonials .testimonial .review .info h2{
+    font-size: 1.2rem;
+    margin: 15px 5px 5px;
+    font-weight: 700;
+}
+
+
+.testimonials .testimonial .review .info p{
+    font-size: 0.8rem;
+    margin: 5px;
+    font-weight: 500;
+    color: rgb(74, 74, 74);
+}
+
+
+.testimonials .testimonial .review .stars i{
+    font-size: 0.6rem;
+    color: #FFCB37;
+    margin: 1px;
+}
+
+
+.buttons i{
+    background-color: #FFCB37;
+    padding: 3px 6px;
+    color: #f5f5f5;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.buttons button{
+    all: unset;
+}
+
+@media screen and (max-width: 500px){
+    .testimonials .testimonial img{
+        width: 35%;
+    }
+    .testimonials .testimonial .review .text{
+        font-size: 0.6rem;
+    }
+    .testimonials .testimonial .review .info h2{
+        font-size: 1rem;
+    }
+    .testimonials .testimonial .review .info p{
+        font-size: 0.7rem;
+    }
+}
